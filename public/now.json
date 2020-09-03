@@ -1,0 +1,18 @@
+{
+    "version": 2,
+    "alias": "my-noteful-app71086",
+    "name": "noteful-app",
+    "routes": [
+      {
+        "src": "^/static/(.*)",
+        "dest": "/static/$1"
+      },
+      {
+        "src": ".*",
+        "dest": "/index.html"
+      }
+    ],
+    "env": {
+      "CI": "false"
+    }
+  }
