@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { format, parseISO } from 'date-fns'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import PropTypes from 'prop-types'
 import ApiContext from '../ApiContext'
 import config from '../config'
 import './Note.css'
@@ -65,4 +66,9 @@ export default class Note extends React.Component {
       </div>
     )
   }
+}
+
+Note.propTypes = {
+  note_name: PropTypes.string,
+  note_id: PropTypes.number
 }
